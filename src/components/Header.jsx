@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <header>
             <Link to={'/'}>
-                <div className="logo">PR<span>O</span>JECT X</div>
+                <div className="logo">MASTER<span>LIFT</span></div>
             </Link>
 
             <nav>
