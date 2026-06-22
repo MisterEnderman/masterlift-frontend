@@ -7,11 +7,11 @@ const style = `
   height: 35px;
   border-radius: 45px;
   border: none;
-  background-color: rgb(151, 95, 255);
+  background-color: rgb(0, 187, 255);
   color: white;
   box-shadow: 0px 10px 10px rgb(210, 187, 253) inset,
   0px 5px 10px rgba(5, 5, 5, 0.212),
-  0px -10px 10px rgb(124, 54, 255) inset;
+  0px -10px 10px rgb(0, 149, 255) inset;
   cursor: pointer;
   display: flex;
   align-items: center;
