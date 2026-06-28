@@ -5,7 +5,6 @@ import Home from './pages/Home'
 import CreatePlanPage from './pages/CreatePlanPage'
 import AboutPage from './pages/AboutPage'
 import PlanDetails from './pages/PlanDetails'
-import Exercise from './components/Exercise'
 import MyPlansPage from './pages/MyPlansPage'
 import ShowcasePage from './pages/ShowcasePage'
 

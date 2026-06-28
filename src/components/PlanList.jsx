@@ -51,8 +51,8 @@ const PlanList = ({ showOnlyMine = false }) => {
         )
     }
 
-    const topLikedPlans = plans.sort((a, b) => a.numOfLikes - b.numOfLikes).slice(0, 21);
-    const displayedPlans = showOnlyMine ? plans.filter(plan => plan.email === currentUserEmail) : topLikedPlans;
+    const topLikedPlans = plans?.sort((a, b) => a.numOfLikes - b.numOfLikes).slice(0, 21);
+    const displayedPlans = showOnlyMine ? plans?.filter(plan => plan.email === currentUserEmail) : topLikedPlans;
 
     // Empty State
     if (!displayedPlans || displayedPlans.length === 0) {
