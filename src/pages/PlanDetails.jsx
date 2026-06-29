@@ -94,20 +94,22 @@ const PlanDetails = ({ apiKey }) => {
                 </>
             )}
 
-            {/* קונטיינר חדש לכפתורי הפעולות בתחתית הדף */}
-            <div className="plan-actions-wrapper">
-                {/* כפתור עריכה - מעביר לעמוד היצירה יחד עם נתוני התוכנית ב-state */}
-                <button
-                    onClick={() => navigate(`/edit/${id}`, { state: { editPlan: plan } })}
-                    className="cp-btn-secondary"
-                >
-                    EDIT PLAN
-                </button>
+            {
+                user.primaryEmailAddress.emailAddress === plan.email &&
+                <div className="plan-actions-wrapper">
+                    {/* כפתור עריכה - מעביר לעמוד היצירה יחד עם נתוני התוכנית ב-state */}
+                    <button
+                        onClick={() => navigate(`/edit/${id}`, { state: { editPlan: plan } })}
+                        className="cp-btn-secondary"
+                    >
+                        EDIT PLAN
+                    </button>
 
-                <button onClick={() => setShowModal(true)} className="cp-btn-delete">
-                    DELETE PLAN
-                </button>
-            </div>
+                    <button onClick={() => setShowModal(true)} className="cp-btn-delete">
+                        DELETE PLAN
+                    </button>
+                </div>
+            }
 
             {showModal && (
                 <div className="modal-overlay" onClick={() => setShowModal(false)}>
